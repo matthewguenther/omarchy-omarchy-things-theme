@@ -1,0 +1,9 @@
+# cliamp theme — copy to ~/.config/cliamp/themes/omarchy-things.toml
+# (matches colors.toml; T9 tests it)
+bg = "#0a0909"
+accent = "#de3d3a"
+bright_fg = "#ded4ca"
+fg = "#857676"
+green = "#4f9483"
+yellow = "#c9973f"
+red = "#de3d3a"

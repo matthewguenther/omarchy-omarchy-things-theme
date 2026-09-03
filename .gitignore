@@ -1,0 +1,11 @@
+# Working files for the maintainer (kept locally, not shipped with the theme)
+CLAUDE.md
+TASKS.md
+BRAINSTORM.md
+.claude/
+colors/
+# scratch
+*.bak
+*.swp
+.DS_Store
+scratch/
