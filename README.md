@@ -16,9 +16,6 @@ always.
   Chromium, VS Code, Obsidian, Claude Code, and the keyboard backlight.
 - **Window borders** fade from poster red into dried-blood red.
 - **Six 4K wallpapers** of the Upside Down, Hawkins, and red storm skies.
-- **Boot screen** with the OMARCHY THINGS wordmark (see below).
-
-![Boot screen](preview-unlock.png)
 
 ## 📦 Install
 
@@ -41,17 +38,17 @@ Six variants live in `backgrounds/`, all 3840x2160. Add your own next to
 them, or drop extra images into `~/.config/omarchy/backgrounds/omarchy-things/`
 to keep them out of the theme folder.
 
-## 🔐 Boot screen logo
+## 🔐 The lock screen
 
-`unlock.png` is not the session lock screen. Omarchy uses it for the
-**boot screen** (Plymouth), the screen that asks for your disk password when
-the computer starts. To switch the boot screen to this theme, open the
-Omarchy menu, go to **Style > Unlock**, and pick this theme. It asks for
-your password because it edits the boot image. Pick **Default** in the same
-menu to go back.
+The lock screen (Super+Escape) shows a blurred copy of whichever wallpaper you
+are on, with the theme's colors on the password box. That is how Omarchy
+builds it, and no theme can put its own artwork there.
 
-The session lock screen (Super+Escape) always shows a blurred copy of your
-wallpaper. That is Omarchy's design, and themes cannot change it.
+There is an `unlock.png` in this repo, but it is not the lock screen. Omarchy
+only uses that file if you open **Style > Unlock** in the Omarchy menu and
+deliberately switch your *boot* screen to this theme, which asks for your
+password and rebuilds your boot image. Installing this theme leaves all of that
+alone. I would rather a theme did not go anywhere near your boot setup.
 
 ## 👾 Extras (optional)
 
@@ -93,7 +90,8 @@ To remove all of it:
 - `docs/OMARCHY-THEME-REFERENCE.md` explains how Omarchy turns that file into
   every app config, and which files a git-installed theme is not allowed to
   ship.
-- `extras/tools/make-unlock.sh` regenerates the boot-screen preview image.
+- `extras/tools/make-unlock.sh` regenerates `preview-unlock.png`, the tile
+  Omarchy shows in its **Style > Unlock** picker.
 
 ## 🙏 Credits
 
